@@ -57,10 +57,6 @@ namespace Task_2
 
 
         }
-
-
-
-
         private async void ConnectionDataButton_Click(object sender, RoutedEventArgs e)
         {
             InfoBox.Text += await Task.Run(() =>
@@ -71,7 +67,6 @@ namespace Task_2
             });
 
         }
-
         private async void DisconnectDataButton_Click(object sender, RoutedEventArgs e)
         {
 
@@ -81,8 +76,6 @@ namespace Task_2
                 timer.Start();
                 return "Відключення від БД\n";
             });
-
-
         }
     }
 }
